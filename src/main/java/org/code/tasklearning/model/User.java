@@ -12,6 +12,7 @@ public class User {
     private Long id;
     private String nome;
     private String email;
+    private String role; // ROLE_USER, ROLE_ADMIN, etc.
 
     public User() {
 
@@ -35,6 +36,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public User(String nome, String email) {
